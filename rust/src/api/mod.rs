@@ -48,7 +48,7 @@ impl OneShot for DummyBackend {
 
     fn from_chunks(&self, arrays: Vec<Box<dyn Array>>) -> usize {
 
-        info!("Hello! Reading the rust pointers now.");
+        info!("Hello! Once you Go Rust you never Go Back !");
 
         for (i, array) in arrays.iter().enumerate() {
             info!("array{}: {:?}", i + 1, array);
