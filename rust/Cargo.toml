@@ -1,10 +1,10 @@
 [package]
-name = "alloys"
-version = "0.1.0"
+name = "arrowalloy"
+version = "0.0.1"
 authors = ["Rickard Ernst Björn Lundin <rickard@ignalina.dk>"]
-homepage = "https://github.com/delta-io/delta.rs"
+homepage = "https://github.com/Ignalina/alloy.rs"
 license = "mit-0"
-keywords = ["alloy", "go", "rust","bridge"]
+keywords = ["alloy", "go", "rust","bridge","arrow"]
 description = "Rust trait for arrow driven implementation"
 edition = "2021"
 
@@ -14,3 +14,4 @@ edition = "2021"
 
 [dependencies]
 arrow2 = "0.14.2"
+chrono = "0.4.22"
