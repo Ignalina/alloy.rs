@@ -1,0 +1,16 @@
+[package]
+name = "alloys"
+version = "0.1.0"
+authors = ["Rickard Ernst Björn Lundin <rickard@ignalina.dk>"]
+homepage = "https://github.com/delta-io/delta.rs"
+license = "mit-0"
+keywords = ["alloy", "go", "rust","bridge"]
+description = "Rust trait for arrow driven implementation"
+edition = "2021"
+
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+arrow2 = "0.14.2"
