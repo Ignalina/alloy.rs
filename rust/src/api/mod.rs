@@ -17,17 +17,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 use arrow2::array::Array;
-use chrono::offset::Local;
 
-macro_rules! info {
-    ($($arg:tt)*) => {
-        println!(
-            "{} [INFO] [Rust]\t{}",
-            Local::now().format("[%Y-%m-%d %H:%M:%S]"),
-            format!($($arg)*)
-        );
-    }
-}
 
 trait OneShot {
     fn set_lib(&self) -> usize;
@@ -36,24 +26,3 @@ trait OneShot {
 }
 
 
-struct DummyBackend {
-    ddlname: String,
-}
-
-impl OneShot for DummyBackend {
-    fn set_lib(&self) -> usize {
-        1
-
-    }
-
-    fn from_chunks(&self, arrays: Vec<Box<dyn Array>>) -> usize {
-
-        info!("Hello! Once you Go Rust you never Go Back !");
-
-        for (i, array) in arrays.iter().enumerate() {
-            info!("array{}: {:?}", i + 1, array);
-        }
-
-        arrays.len()
-    }
-}
