@@ -19,7 +19,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 use arrow2::array::Array;
 
 
-trait OneShot {
+pub trait OneShot {
     fn set_lib(&self) -> usize;
     fn from_chunks(&self, arrays: Vec<Box<dyn Array>>) -> usize;
 

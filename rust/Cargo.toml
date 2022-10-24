@@ -1,6 +1,6 @@
 [package]
 name = "arrowalloy"
-version = "0.0.2"
+version = "0.0.3"
 authors = ["Rickard Ernst Björn Lundin <rickard@ignalina.dk>"]
 homepage = "https://github.com/Ignalina/alloy.rs"
 license = "MIT-0"
